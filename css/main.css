@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER */
+
+
+.contenedor {
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(120deg, rgba(246, 212, 101, 0.397) 0%, rgba(253, 159, 133, 0.267) 100%), url(../img/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.head {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.hamburguesa {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background-color: rgba(255, 255, 255, 0.719);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menuNavegacion {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30vw;
+  height: 100%;
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translate(110%);
+  /* transition: transform .3s ease-in-out; */
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.mostrarMenu {
+  transform: translate(0);
+}
+
+.menuNavegacion a {
+  color: black;
+  text-decoration: none;
+}
+
+.tituloHeader {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.texto {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+/* Nuestro Servicio */
+
+.subtitulo {
+  text-align: center;
+  font-weight: 300;
+  color: #9f8ad0;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.imgChecklist {
+  width: 40%;
+  height: 600px;
+}
+
+.contenedorServicio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.checklistServicio {
+  width: 45%;
+}
+
+.servicio {
+  margin-bottom: 20px;
+}
+
+.nServicio {
+  margin-bottom: 7px;
+}
+
+.numero {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  line-height: 30px;
+  margin-right: 5px;
+}
+
+.galeria {
+  background: #f2f2f2;
+}
+
+.contenedorGaleria {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.imgGaleria {
+  width: 30%;
+  display: block;
+  margin-bottom: 15px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+  cursor: pointer;
+}
+
+.imagenClara {
+  position: fixed;
+  background-color: rgba(0, 0, 0, .6);
+  /* box-shadow: 0 0 6px rgba(0, 0, 0, .6); */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .2 ease-in-out;
+  transform: translate(100%);
+}
+
+.mostrar {
+  transform: translate(0);
+}
+
+.agregarImagen {
+  width: 60%;
+  border-radius: 10px;
+  transition: transform .3s .2;
+  transform: scale(0);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.mostrarImagen {
+  transform: scale(1);
+}
+
+/* Footer */
+
+footer {
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  padding-bottom: 0.1px;
+
+}
+
+.contenidoFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.contactanos {
+  width: 40%;
+  color: rgb(68, 23, 23);
+}
+
+.marca {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.marca+p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.redesSociales {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.iconoRedSocial {
+  display: inline-block;
+  margin-left: 20px;
+  width: 10%;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  color: rgba(14, 13, 13, 0.918);
+}
+
+.iconoRedSocial:hover {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  color: rgba(0, 0, 0, 0.911);
+}
+
+.iconoRedSocial i {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.linea {
+  width: 90%;
+  margin: 0 auto;
+  height: 2px;
+  background: black;
+  margin-bottom: 60px;
+}

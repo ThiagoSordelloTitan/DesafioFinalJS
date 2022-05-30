@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tienda </title>
+    
+    <!-- link css bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+
+    <header class="header" id="inicio">
+        <img class="hamburguesa" src="../img/hamburguesa.svg" alt="menu hamburguesa">
+        <nav class="menuNavegacion">
+                <a href="../index.html">Inicio</a>
+                <a href="#footer">Contacto</a>
+                <a href="pages/tienda.html"> Tienda</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="tituloHeader">La paz que buscabas al alcance de tu mano</h1>
+            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        
+    </header>
+    <main>
+        <div class="container">
+            <h1> Productos </h1>
+            <hr>
+            <div class="row" id="cards"></div>
+        </div>
+        <div>
+            <template id="template-card">
+                <div class="col-12 col-md-4 mb-2">
+                  <div class="card">
+                      <img src="" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <h5>Titulo</h5>
+                      <p>precio</p>
+                      <button class="btn btn-dark">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </template>
+        </div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Item</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Acción</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+              <tr id="footerTabla">
+                <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+              </tr>
+            </tfoot>
+          </table>
+        <template id="template-footer">
+            <th scope="row" colspan="2">Total productos</th>
+            <td>10</td>
+            <td>
+                <button class="btn btn-danger btn-sm" id="vaciarCarrito">
+                    Vaciar todo
+                </button>
+              </td>
+            </td>
+            <td class="font-weight-bold">$ <span>5000</span></td>
+        </template>
+        
+        <template id="template-carrito">
+          <tr>
+            <th scope="row">id</th>
+            <td>Café</td>
+            <td>1</td>
+            <td>
+                <button class="btn btn-info btn-sm">
+                    +
+                </button>
+                <button class="btn btn-danger btn-sm">
+                    -
+                </button>
+            </td>
+            <td>$ <span>500</span></td>
+          </tr>
+        </template>
+    </main>
+
+    <footer id="footer">
+        <div class="contenedor contenidoFooter">
+                <div class="contactanos">
+                    <h2 class="marca">Thiago Sordello Titan</h2>
+                    <p>Desasarrollador Web</p>
+                </div>
+                <div class="redesSociales">
+                    <a href="#" class="iconoRedSocial">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="iconoRedSocial">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+        </div>
+        <div class="linea">
+        </div>
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- link js bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"      crossorigin="anonymous"></script>
+
+    <!-- link js -->
+    <script src="../js/tienda.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+[
+    {
+      "precio": 500,
+      "id": 1,
+      "titulo": "Estatuita de buda",
+      "imagen": "../img/buda-min.png",
+      "texto": "estatuita de buda"
+    },
+    {
+      "precio": 300,
+      "id": 2,
+      "titulo": "Sahumerios",
+      "imagen": "../img/sahumerio-min.png",
+      "texto": "sahumerios"
+    },
+    {
+      "precio": 100,
+      "id": 3,
+      "titulo": "Velas aromáticas",
+      "imagen": "../img/velas-min.png",
+      "texto": "sahumerios"
+    },
+    {
+      "precio": 200,
+      "id": 4,
+      "titulo": "Pulsera",
+      "imagen": "../img/pulsera-min.png",
+      "texto": "sahumerios"
+    }
+  ]
